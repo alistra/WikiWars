@@ -1,0 +1,460 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C985824AA302C4AA14B724FA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9858C36B20A9682DAF2E4D2 /* UIKit.framework */; };
+		C9858360B0525288723E7B9E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C98585DA45C44105E6FB641D /* XCTest.framework */; };
+		C985844B69F3255925EB636F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C98585E52617325FE40643A2 /* InfoPlist.strings */; };
+		C98585C756CB2BFFCF1ED746 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9858D0C67550E4910387069 /* Foundation.framework */; };
+		C9858645D595A02A008C1C66 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C985820798ED806873D15162 /* InfoPlist.strings */; };
+		C985865E75D7B405747E58ED /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9858C36B20A9682DAF2E4D2 /* UIKit.framework */; };
+		C98586AC4B832964AA5C0862 /* WWAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C9858793D8B2A8F330D6B7FD /* WWAppDelegate.m */; };
+		C985893D5274172E4A8095C6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C985844B46987EA3F42EB6AE /* main.m */; };
+		C98589D4E5631E8725F6AC9D /* WWStartGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C985859B172A279DA3140B51 /* WWStartGameViewController.m */; };
+		C9858A66118ACD03E4403FF0 /* WWMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9858B76129380C59C03FF16 /* WWMasterViewController.m */; };
+		C9858B33AC39B27C6F81D12F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C98585830CF17D9A609572ED /* CoreGraphics.framework */; };
+		C9858B369F070CFE95D32F82 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9858ADE3632E8497A993A1F /* Images.xcassets */; };
+		C9858C881D88048428A43775 /* WikiaWarsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C9858231B5A7BE0FA8352127 /* WikiaWarsTests.m */; };
+		C9858DC3802F1EEFE35CF309 /* WWDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C98584DC6AA88E72FC13C6E6 /* WWDetailViewController.m */; };
+		C9858F37049CF836CA3F39EE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9858D0C67550E4910387069 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C98589FD1CD2EA6080EC3047 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C98582445A1933918AD5D365 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C9858CD29050C838035230FC;
+			remoteInfo = WikiaWars;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C9858231B5A7BE0FA8352127 /* WikiaWarsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WikiaWarsTests.m; sourceTree = "<group>"; };
+		C98582C9388E9065D69720A7 /* WWAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WWAppDelegate.h; sourceTree = "<group>"; };
+		C985844B46987EA3F42EB6AE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C9858455199FFF59B107FC25 /* WikiaWars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WikiaWars.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C98584DC6AA88E72FC13C6E6 /* WWDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WWDetailViewController.m; sourceTree = "<group>"; };
+		C98585830CF17D9A609572ED /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C985859B172A279DA3140B51 /* WWStartGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWStartGameViewController.m; sourceTree = "<group>"; };
+		C985859D1DF3E901B1EC520C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C98585DA45C44105E6FB641D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		C9858793D8B2A8F330D6B7FD /* WWAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WWAppDelegate.m; sourceTree = "<group>"; };
+		C985895AEDF0D7EE0C194E2F /* WikiaWars-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WikiaWars-Prefix.pch"; sourceTree = "<group>"; };
+		C985896C5C639475E3F509A1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C9858A3FB66AAA179F16CAB8 /* WWStartGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWStartGameViewController.h; sourceTree = "<group>"; };
+		C9858A4948D5F83C74671F05 /* WikiaWarsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "WikiaWarsTests-Info.plist"; sourceTree = "<group>"; };
+		C9858ADE3632E8497A993A1F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C9858B76129380C59C03FF16 /* WWMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WWMasterViewController.m; sourceTree = "<group>"; };
+		C9858C36B20A9682DAF2E4D2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C9858C85145AA3B8718B3EA0 /* WikiaWars-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "WikiaWars-Info.plist"; sourceTree = "<group>"; };
+		C9858D0C67550E4910387069 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C9858D38CAA3E9862CA8567F /* WWDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WWDetailViewController.h; sourceTree = "<group>"; };
+		C9858F123A39280B419B5911 /* WikiaWarsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WikiaWarsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9858F65751D7D1077BAEDAC /* WWMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WWMasterViewController.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C98583F9661B51FE9331C76D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9858360B0525288723E7B9E /* XCTest.framework in Frameworks */,
+				C98585C756CB2BFFCF1ED746 /* Foundation.framework in Frameworks */,
+				C985824AA302C4AA14B724FA /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C98588EC0A55602A81938E64 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9858F37049CF836CA3F39EE /* Foundation.framework in Frameworks */,
+				C9858B33AC39B27C6F81D12F /* CoreGraphics.framework in Frameworks */,
+				C985865E75D7B405747E58ED /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C98584A05890FC92BED8F92B = {
+			isa = PBXGroup;
+			children = (
+				C9858A4ED21B2C0B03F3ADC8 /* Products */,
+				C985882D82E2D38F0EA72572 /* Frameworks */,
+				C9858982A0D09FA4DB55E1E3 /* WikiaWars */,
+				C98584EA249F31BA7C333F4F /* WikiaWarsTests */,
+			);
+			sourceTree = "<group>";
+		};
+		C98584EA249F31BA7C333F4F /* WikiaWarsTests */ = {
+			isa = PBXGroup;
+			children = (
+				C985894CCC16DBCD92DF3785 /* Supporting Files */,
+				C9858231B5A7BE0FA8352127 /* WikiaWarsTests.m */,
+			);
+			path = WikiaWarsTests;
+			sourceTree = "<group>";
+		};
+		C985882D82E2D38F0EA72572 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C9858D0C67550E4910387069 /* Foundation.framework */,
+				C98585830CF17D9A609572ED /* CoreGraphics.framework */,
+				C9858C36B20A9682DAF2E4D2 /* UIKit.framework */,
+				C98585DA45C44105E6FB641D /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C98589406BD793C4C91AA81E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C9858C85145AA3B8718B3EA0 /* WikiaWars-Info.plist */,
+				C98585E52617325FE40643A2 /* InfoPlist.strings */,
+				C985844B46987EA3F42EB6AE /* main.m */,
+				C985895AEDF0D7EE0C194E2F /* WikiaWars-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C985894CCC16DBCD92DF3785 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C9858A4948D5F83C74671F05 /* WikiaWarsTests-Info.plist */,
+				C985820798ED806873D15162 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C9858982A0D09FA4DB55E1E3 /* WikiaWars */ = {
+			isa = PBXGroup;
+			children = (
+				C98589406BD793C4C91AA81E /* Supporting Files */,
+				C98582C9388E9065D69720A7 /* WWAppDelegate.h */,
+				C9858793D8B2A8F330D6B7FD /* WWAppDelegate.m */,
+				C9858ADE3632E8497A993A1F /* Images.xcassets */,
+				C9858F65751D7D1077BAEDAC /* WWMasterViewController.h */,
+				C9858B76129380C59C03FF16 /* WWMasterViewController.m */,
+				C9858D38CAA3E9862CA8567F /* WWDetailViewController.h */,
+				C98584DC6AA88E72FC13C6E6 /* WWDetailViewController.m */,
+				C985859B172A279DA3140B51 /* WWStartGameViewController.m */,
+				C9858A3FB66AAA179F16CAB8 /* WWStartGameViewController.h */,
+			);
+			path = WikiaWars;
+			sourceTree = "<group>";
+		};
+		C9858A4ED21B2C0B03F3ADC8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C9858455199FFF59B107FC25 /* WikiaWars.app */,
+				C9858F123A39280B419B5911 /* WikiaWarsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C985891C1D579C07A0A3E7FC /* WikiaWarsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C98588E11C8591B74D81B0FD /* Build configuration list for PBXNativeTarget "WikiaWarsTests" */;
+			buildPhases = (
+				C9858584070443478A2761EC /* Sources */,
+				C98583F9661B51FE9331C76D /* Frameworks */,
+				C98583EA5C29FE5E6DA0043E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C9858AB2A97ABB6B1468B5B0 /* PBXTargetDependency */,
+			);
+			name = WikiaWarsTests;
+			productName = WikiaWarsTests;
+			productReference = C9858F123A39280B419B5911 /* WikiaWarsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C9858CD29050C838035230FC /* WikiaWars */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C98584641CF00001F7185651 /* Build configuration list for PBXNativeTarget "WikiaWars" */;
+			buildPhases = (
+				C985890016DCAEAFCB0DE81A /* Sources */,
+				C98588EC0A55602A81938E64 /* Frameworks */,
+				C9858144B281220CB1D4D8D7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WikiaWars;
+			productName = WikiaWars;
+			productReference = C9858455199FFF59B107FC25 /* WikiaWars.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C98582445A1933918AD5D365 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = Wikia;
+			};
+			buildConfigurationList = C9858AD7B1EF851583EC1640 /* Build configuration list for PBXProject "WikiaWars" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C98584A05890FC92BED8F92B;
+			productRefGroup = C9858A4ED21B2C0B03F3ADC8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C9858CD29050C838035230FC /* WikiaWars */,
+				C985891C1D579C07A0A3E7FC /* WikiaWarsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C9858144B281220CB1D4D8D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C985844B69F3255925EB636F /* InfoPlist.strings in Resources */,
+				C9858B369F070CFE95D32F82 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C98583EA5C29FE5E6DA0043E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9858645D595A02A008C1C66 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C9858584070443478A2761EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9858C881D88048428A43775 /* WikiaWarsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C985890016DCAEAFCB0DE81A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C985893D5274172E4A8095C6 /* main.m in Sources */,
+				C98586AC4B832964AA5C0862 /* WWAppDelegate.m in Sources */,
+				C9858A66118ACD03E4403FF0 /* WWMasterViewController.m in Sources */,
+				C9858DC3802F1EEFE35CF309 /* WWDetailViewController.m in Sources */,
+				C98589D4E5631E8725F6AC9D /* WWStartGameViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C9858AB2A97ABB6B1468B5B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C9858CD29050C838035230FC /* WikiaWars */;
+			targetProxy = C98589FD1CD2EA6080EC3047 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C985820798ED806873D15162 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C985859D1DF3E901B1EC520C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C98585E52617325FE40643A2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C985896C5C639475E3F509A1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C985806B938A323BD32C7A04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WikiaWars/WikiaWars-Prefix.pch";
+				INFOPLIST_FILE = "WikiaWarsTests/WikiaWarsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+		C9858804AB77303DAF8A8920 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C98589299A0CE390D9AFA96F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WikiaWars/WikiaWars-Prefix.pch";
+				INFOPLIST_FILE = "WikiaWarsTests/WikiaWarsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		C9858A80B1B87AE264631D7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WikiaWars/WikiaWars-Prefix.pch";
+				INFOPLIST_FILE = "WikiaWars/WikiaWars-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C9858C35B54C0175D7B71901 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C9858EF25BC0B4262F6F7B87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WikiaWars/WikiaWars-Prefix.pch";
+				INFOPLIST_FILE = "WikiaWars/WikiaWars-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C98584641CF00001F7185651 /* Build configuration list for PBXNativeTarget "WikiaWars" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9858EF25BC0B4262F6F7B87 /* Release */,
+				C9858A80B1B87AE264631D7F /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C98588E11C8591B74D81B0FD /* Build configuration list for PBXNativeTarget "WikiaWarsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C985806B938A323BD32C7A04 /* Release */,
+				C98589299A0CE390D9AFA96F /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9858AD7B1EF851583EC1640 /* Build configuration list for PBXProject "WikiaWars" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9858804AB77303DAF8A8920 /* Release */,
+				C9858C35B54C0175D7B71901 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C98582445A1933918AD5D365 /* Project object */;
+}
