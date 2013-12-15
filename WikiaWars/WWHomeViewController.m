@@ -22,12 +22,14 @@
     self.view.backgroundColor = [UIColor whiteColor];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    self.navigationController.navigationBar.hidden = YES;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
-    self.navigationController.navigationBar.hidden = YES;
-
+    
     self.view.backgroundColor = [UIColor colorWithRed:0 green:0x2D/255.  blue:0x53/255. alpha:1];
 
     self.logoView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"wikia-wars@2.png"]];

@@ -70,7 +70,7 @@
     self.navigationController.navigationBar.hidden = NO;
     self.navigationItem.hidesBackButton = YES;
 
-    self.backButton = [[UIBarButtonItem alloc] initWithTitle:@"BACK"
+    self.backButton = [[UIBarButtonItem alloc] initWithTitle:@"Back"
                                                                 style:UIBarButtonItemStyleDone
                                                                target:self
                                                                action:@selector(popAlertAction:)];
