@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-//static NSString *const serverUrl = @"http://10.10.10.111:8080";
-static NSString *const serverUrl = @"http://127.0.0.1:8080";
+static NSString *const serverUrl = @"http://alistra.wikia-dev.com";
+//static NSString *const serverUrl = @"http://127.0.0.1:8080";
 
 @interface WWGameViewController : UIViewController <UIWebViewDelegate>
 
