@@ -35,12 +35,12 @@
                                        queue:[NSOperationQueue mainQueue]
                            completionHandler:^(NSURLResponse*response, NSData*data, NSError*error) {
         if (!data) {
-            [[UIAlertView alloc] initWithTitle:@"Network error"
-                                       message:@"Handling errors in a hackathon project?"
-                                      delegate:nil cancelButtonTitle:@"Riiiiight"
-                             otherButtonTitles:nil];
-            [self.navigationController popViewControllerAnimated:YES];
-            [self.navigationController popViewControllerAnimated:YES];
+            UIAlertView *view = [[UIAlertView alloc] initWithTitle:@"Network error"
+                                               message:@"Handling errors in a hackathon project?"
+                                              delegate:nil cancelButtonTitle:@"Riiiiight"
+                                     otherButtonTitles:nil];
+            [view show];
+            [self.navigationController popToRootViewControllerAnimated:YES];
             return;
         }
         NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:data options:0 error:NULL];
@@ -54,7 +54,7 @@
 - (void)prepareStartGame {
 
     WWStartGameViewController *startGameViewController = [[WWStartGameViewController alloc] initWithStart:self.start end:self.end];
-
+    startGameViewController.gameController = self;
     [self presentViewController:startGameViewController animated:YES completion:nil];
 
     self.title = [NSString stringWithFormat:@"Reach %@", self.end[@"name"]];
@@ -68,19 +68,58 @@
 - (void)startGame {
 
     self.navigationController.navigationBar.hidden = NO;
+    self.navigationItem.hidesBackButton = YES;
+
+    self.backButton = [[UIBarButtonItem alloc] initWithTitle:@"BACK"
+                                                                style:UIBarButtonItemStyleDone
+                                                               target:self
+                                                               action:@selector(popAlertAction:)];
+
+    self.navigationItem.leftBarButtonItem = self.backButton;
+    self.backButton.enabled = NO;
+    
+    self.clicksLabel = [[UILabel alloc] initWithFrame:CGRectZero];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:self.clicksLabel];
+
     self.startDate = [NSDate date];
     self.clicks = 0;
 }
+
+- (void)popAlertAction:(UIBarButtonItem *)button {
+
+    if (self.webview.canGoBack) {
+        
+        [self.webview goBack];
+        
+    } else {
+        
+        [self.navigationController popViewControllerAnimated:YES];
+    }
+}
+
 
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
     
     if ([request.URL.absoluteString isEqualToString:self.end[@"url"]]) {
 
+        self.clicks++;
         [self won];
         return NO;
     }
     
-    return navigationType == UIWebViewNavigationTypeLinkClicked || navigationType == UIWebViewNavigationTypeOther;
+    BOOL result = navigationType == UIWebViewNavigationTypeLinkClicked || navigationType == UIWebViewNavigationTypeOther || navigationType == UIWebViewNavigationTypeBackForward;
+    
+    if (navigationType == UIWebViewNavigationTypeLinkClicked || navigationType == UIWebViewNavigationTypeBackForward) {
+        self.clicks++;
+    }
+    
+    return result;
+}
+
+-(void)setClicks:(NSUInteger)clicks {
+    _clicks = clicks;
+    self.clicksLabel.text = [NSString stringWithFormat:@"%d clicks", _clicks];
+    [self.clicksLabel sizeToFit];
 }
 
 - (void)won {
@@ -92,18 +131,9 @@
 }
 
 - (void)webViewDidFinishLoad:(UIWebView *)webView {
+    self.backButton.enabled = self.webview.canGoBack;
     [webView stringByEvaluatingJavaScriptFromString:@"$('#wkTopNav, #wkAdTopLeader, #wkFtr, .messagebox.hidable').remove()"];
 }
 
-- (BOOL)navigationBar:(UINavigationBar *)navigationBar shouldPopItem:(UINavigationItem *)item {
-
-    if (self.webview.canGoBack) {
-
-        [self.webview goBack];
-        return NO;
-    }
-
-    return YES;
-}
 
 @end

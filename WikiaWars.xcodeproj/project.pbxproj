@@ -14,7 +14,6 @@
 		C9858645D595A02A008C1C66 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C985820798ED806873D15162 /* InfoPlist.strings */; };
 		C985865E75D7B405747E58ED /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9858C36B20A9682DAF2E4D2 /* UIKit.framework */; };
 		C98586AC4B832964AA5C0862 /* WWAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C9858793D8B2A8F330D6B7FD /* WWAppDelegate.m */; };
-		C98586DEEB23B780BB105815 /* UINavigationController+ShouldPop.m in Sources */ = {isa = PBXBuildFile; fileRef = C9858BEAD64AFC6D7803069E /* UINavigationController+ShouldPop.m */; };
 		C985893D5274172E4A8095C6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C985844B46987EA3F42EB6AE /* main.m */; };
 		C98589D4E5631E8725F6AC9D /* WWStartGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C985859B172A279DA3140B51 /* WWStartGameViewController.m */; };
 		C9858A66118ACD03E4403FF0 /* WWHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9858B76129380C59C03FF16 /* WWHomeViewController.m */; };
@@ -50,7 +49,6 @@
 		C985859B172A279DA3140B51 /* WWStartGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWStartGameViewController.m; sourceTree = "<group>"; };
 		C985859D1DF3E901B1EC520C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C98585DA45C44105E6FB641D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		C9858664F04EB359AB9559FD /* UINavigationController+ShouldPop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+ShouldPop.h"; sourceTree = "<group>"; };
 		C985871837B9F96654C401A9 /* UIView+Align.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Align.m"; sourceTree = "<group>"; };
 		C9858793D8B2A8F330D6B7FD /* WWAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WWAppDelegate.m; sourceTree = "<group>"; };
 		C985895AEDF0D7EE0C194E2F /* WikiaWars-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WikiaWars-Prefix.pch"; sourceTree = "<group>"; };
@@ -60,7 +58,6 @@
 		C9858ADE3632E8497A993A1F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C9858B53E3C47EED77418701 /* wikia-wars@2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wikia-wars@2.png"; sourceTree = SOURCE_ROOT; };
 		C9858B76129380C59C03FF16 /* WWHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WWHomeViewController.m; sourceTree = "<group>"; };
-		C9858BEAD64AFC6D7803069E /* UINavigationController+ShouldPop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+ShouldPop.m"; sourceTree = "<group>"; };
 		C9858C33A959C513F9CD0DEB /* UIView+Align.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Align.h"; sourceTree = "<group>"; };
 		C9858C36B20A9682DAF2E4D2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C9858C85145AA3B8718B3EA0 /* WikiaWars-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "WikiaWars-Info.plist"; sourceTree = "<group>"; };
@@ -160,8 +157,6 @@
 				C9858B53E3C47EED77418701 /* wikia-wars@2.png */,
 				C985871837B9F96654C401A9 /* UIView+Align.m */,
 				C9858C33A959C513F9CD0DEB /* UIView+Align.h */,
-				C9858BEAD64AFC6D7803069E /* UINavigationController+ShouldPop.m */,
-				C9858664F04EB359AB9559FD /* UINavigationController+ShouldPop.h */,
 				C9858565B2CC225CDE580C21 /* WWResultViewController.m */,
 				C98584B1D6830615020B5D1F /* WWResultViewController.h */,
 			);
@@ -221,7 +216,13 @@
 		C98582445A1933918AD5D365 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = Wikia;
+				TargetAttributes = {
+					C9858CD29050C838035230FC = {
+						DevelopmentTeam = LW86FQS96L;
+					};
+				};
 			};
 			buildConfigurationList = C9858AD7B1EF851583EC1640 /* Build configuration list for PBXProject "WikiaWars" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -281,7 +282,6 @@
 				C9858DC3802F1EEFE35CF309 /* WWGameViewController.m in Sources */,
 				C98589D4E5631E8725F6AC9D /* WWStartGameViewController.m in Sources */,
 				C9858C8041576D38CBE8578E /* UIView+Align.m in Sources */,
-				C98586DEEB23B780BB105815 /* UINavigationController+ShouldPop.m in Sources */,
 				C9858F6E5F4935B982DAA372 /* WWResultViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -335,7 +335,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -385,6 +384,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WikiaWars/WikiaWars-Prefix.pch";
 				INFOPLIST_FILE = "WikiaWars/WikiaWars-Info.plist";
@@ -397,7 +397,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -438,6 +437,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WikiaWars/WikiaWars-Prefix.pch";
 				INFOPLIST_FILE = "WikiaWars/WikiaWars-Info.plist";

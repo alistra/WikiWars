@@ -17,7 +17,8 @@ static NSString *const serverUrl = @"http://127.0.0.1:8080";
 @property(nonatomic, strong) UIWebView *webview;
 
 @property(nonatomic, strong) NSDate *startDate;
+@property(nonatomic, strong) UIBarButtonItem *backButton;
 @property(nonatomic) NSUInteger clicks;
-
+@property(nonatomic, strong) UILabel *clicksLabel;
 - (void)startGame;
 @end

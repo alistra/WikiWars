@@ -82,9 +82,9 @@
 }
 
 - (void)playGame {
-    [self.presentingViewController dismissViewControllerAnimated:YES completion:^{
-        [(WWGameViewController *) self.presentingViewController startGame];
-    }];
+    [self.gameController startGame];
+
+    [self.presentingViewController dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end

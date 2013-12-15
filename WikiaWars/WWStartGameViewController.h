@@ -7,6 +7,8 @@
 
 #import <Foundation/Foundation.h>
 
+@class WWGameViewController;
+
 
 @interface WWStartGameViewController : UIViewController
 @property(nonatomic, strong) NSDictionary *start;
@@ -22,6 +24,8 @@
 @property(nonatomic, strong) UILabel *middleLabel;
 
 @property(nonatomic, strong) UILabel *toLabel;
+
+@property(nonatomic, weak) WWGameViewController *gameController;
 
 - (id)initWithStart:(NSDictionary *)dictionary end:(NSDictionary *)end;
 @end
