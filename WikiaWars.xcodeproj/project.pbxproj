@@ -14,14 +14,18 @@
 		C9858645D595A02A008C1C66 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C985820798ED806873D15162 /* InfoPlist.strings */; };
 		C985865E75D7B405747E58ED /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9858C36B20A9682DAF2E4D2 /* UIKit.framework */; };
 		C98586AC4B832964AA5C0862 /* WWAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C9858793D8B2A8F330D6B7FD /* WWAppDelegate.m */; };
+		C98586DEEB23B780BB105815 /* UINavigationController+ShouldPop.m in Sources */ = {isa = PBXBuildFile; fileRef = C9858BEAD64AFC6D7803069E /* UINavigationController+ShouldPop.m */; };
 		C985893D5274172E4A8095C6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C985844B46987EA3F42EB6AE /* main.m */; };
 		C98589D4E5631E8725F6AC9D /* WWStartGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C985859B172A279DA3140B51 /* WWStartGameViewController.m */; };
-		C9858A66118ACD03E4403FF0 /* WWMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9858B76129380C59C03FF16 /* WWMasterViewController.m */; };
+		C9858A66118ACD03E4403FF0 /* WWHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9858B76129380C59C03FF16 /* WWHomeViewController.m */; };
 		C9858B33AC39B27C6F81D12F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C98585830CF17D9A609572ED /* CoreGraphics.framework */; };
 		C9858B369F070CFE95D32F82 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9858ADE3632E8497A993A1F /* Images.xcassets */; };
+		C9858C8041576D38CBE8578E /* UIView+Align.m in Sources */ = {isa = PBXBuildFile; fileRef = C985871837B9F96654C401A9 /* UIView+Align.m */; };
 		C9858C881D88048428A43775 /* WikiaWarsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C9858231B5A7BE0FA8352127 /* WikiaWarsTests.m */; };
-		C9858DC3802F1EEFE35CF309 /* WWDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C98584DC6AA88E72FC13C6E6 /* WWDetailViewController.m */; };
+		C9858DC3802F1EEFE35CF309 /* WWGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C98584DC6AA88E72FC13C6E6 /* WWGameViewController.m */; };
+		C9858E73FFC7E48F4C25CBB2 /* wikia-wars@2.png in Resources */ = {isa = PBXBuildFile; fileRef = C9858B53E3C47EED77418701 /* wikia-wars@2.png */; };
 		C9858F37049CF836CA3F39EE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9858D0C67550E4910387069 /* Foundation.framework */; };
+		C9858F6E5F4935B982DAA372 /* WWResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9858565B2CC225CDE580C21 /* WWResultViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,24 +43,31 @@
 		C98582C9388E9065D69720A7 /* WWAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WWAppDelegate.h; sourceTree = "<group>"; };
 		C985844B46987EA3F42EB6AE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C9858455199FFF59B107FC25 /* WikiaWars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WikiaWars.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C98584DC6AA88E72FC13C6E6 /* WWDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WWDetailViewController.m; sourceTree = "<group>"; };
+		C98584B1D6830615020B5D1F /* WWResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWResultViewController.h; sourceTree = "<group>"; };
+		C98584DC6AA88E72FC13C6E6 /* WWGameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WWGameViewController.m; sourceTree = "<group>"; };
+		C9858565B2CC225CDE580C21 /* WWResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWResultViewController.m; sourceTree = "<group>"; };
 		C98585830CF17D9A609572ED /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		C985859B172A279DA3140B51 /* WWStartGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWStartGameViewController.m; sourceTree = "<group>"; };
 		C985859D1DF3E901B1EC520C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C98585DA45C44105E6FB641D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		C9858664F04EB359AB9559FD /* UINavigationController+ShouldPop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+ShouldPop.h"; sourceTree = "<group>"; };
+		C985871837B9F96654C401A9 /* UIView+Align.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Align.m"; sourceTree = "<group>"; };
 		C9858793D8B2A8F330D6B7FD /* WWAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WWAppDelegate.m; sourceTree = "<group>"; };
 		C985895AEDF0D7EE0C194E2F /* WikiaWars-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WikiaWars-Prefix.pch"; sourceTree = "<group>"; };
 		C985896C5C639475E3F509A1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C9858A3FB66AAA179F16CAB8 /* WWStartGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWStartGameViewController.h; sourceTree = "<group>"; };
 		C9858A4948D5F83C74671F05 /* WikiaWarsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "WikiaWarsTests-Info.plist"; sourceTree = "<group>"; };
 		C9858ADE3632E8497A993A1F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		C9858B76129380C59C03FF16 /* WWMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WWMasterViewController.m; sourceTree = "<group>"; };
+		C9858B53E3C47EED77418701 /* wikia-wars@2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wikia-wars@2.png"; sourceTree = SOURCE_ROOT; };
+		C9858B76129380C59C03FF16 /* WWHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WWHomeViewController.m; sourceTree = "<group>"; };
+		C9858BEAD64AFC6D7803069E /* UINavigationController+ShouldPop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+ShouldPop.m"; sourceTree = "<group>"; };
+		C9858C33A959C513F9CD0DEB /* UIView+Align.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Align.h"; sourceTree = "<group>"; };
 		C9858C36B20A9682DAF2E4D2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C9858C85145AA3B8718B3EA0 /* WikiaWars-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "WikiaWars-Info.plist"; sourceTree = "<group>"; };
 		C9858D0C67550E4910387069 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		C9858D38CAA3E9862CA8567F /* WWDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WWDetailViewController.h; sourceTree = "<group>"; };
+		C9858D38CAA3E9862CA8567F /* WWGameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WWGameViewController.h; sourceTree = "<group>"; };
 		C9858F123A39280B419B5911 /* WikiaWarsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WikiaWarsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C9858F65751D7D1077BAEDAC /* WWMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WWMasterViewController.h; sourceTree = "<group>"; };
+		C9858F65751D7D1077BAEDAC /* WWHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WWHomeViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,12 +151,19 @@
 				C98582C9388E9065D69720A7 /* WWAppDelegate.h */,
 				C9858793D8B2A8F330D6B7FD /* WWAppDelegate.m */,
 				C9858ADE3632E8497A993A1F /* Images.xcassets */,
-				C9858F65751D7D1077BAEDAC /* WWMasterViewController.h */,
-				C9858B76129380C59C03FF16 /* WWMasterViewController.m */,
-				C9858D38CAA3E9862CA8567F /* WWDetailViewController.h */,
-				C98584DC6AA88E72FC13C6E6 /* WWDetailViewController.m */,
+				C9858F65751D7D1077BAEDAC /* WWHomeViewController.h */,
+				C9858B76129380C59C03FF16 /* WWHomeViewController.m */,
+				C9858D38CAA3E9862CA8567F /* WWGameViewController.h */,
+				C98584DC6AA88E72FC13C6E6 /* WWGameViewController.m */,
 				C985859B172A279DA3140B51 /* WWStartGameViewController.m */,
 				C9858A3FB66AAA179F16CAB8 /* WWStartGameViewController.h */,
+				C9858B53E3C47EED77418701 /* wikia-wars@2.png */,
+				C985871837B9F96654C401A9 /* UIView+Align.m */,
+				C9858C33A959C513F9CD0DEB /* UIView+Align.h */,
+				C9858BEAD64AFC6D7803069E /* UINavigationController+ShouldPop.m */,
+				C9858664F04EB359AB9559FD /* UINavigationController+ShouldPop.h */,
+				C9858565B2CC225CDE580C21 /* WWResultViewController.m */,
+				C98584B1D6830615020B5D1F /* WWResultViewController.h */,
 			);
 			path = WikiaWars;
 			sourceTree = "<group>";
@@ -230,6 +248,7 @@
 			files = (
 				C985844B69F3255925EB636F /* InfoPlist.strings in Resources */,
 				C9858B369F070CFE95D32F82 /* Images.xcassets in Resources */,
+				C9858E73FFC7E48F4C25CBB2 /* wikia-wars@2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +277,12 @@
 			files = (
 				C985893D5274172E4A8095C6 /* main.m in Sources */,
 				C98586AC4B832964AA5C0862 /* WWAppDelegate.m in Sources */,
-				C9858A66118ACD03E4403FF0 /* WWMasterViewController.m in Sources */,
-				C9858DC3802F1EEFE35CF309 /* WWDetailViewController.m in Sources */,
+				C9858A66118ACD03E4403FF0 /* WWHomeViewController.m in Sources */,
+				C9858DC3802F1EEFE35CF309 /* WWGameViewController.m in Sources */,
 				C98589D4E5631E8725F6AC9D /* WWStartGameViewController.m in Sources */,
+				C9858C8041576D38CBE8578E /* UIView+Align.m in Sources */,
+				C98586DEEB23B780BB105815 /* UINavigationController+ShouldPop.m in Sources */,
+				C9858F6E5F4935B982DAA372 /* WWResultViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

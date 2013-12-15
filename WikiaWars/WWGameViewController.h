@@ -1,5 +1,5 @@
 //
-//  WWDetailViewController.h
+//  WWGameViewController.h
 //  WikiaWars
 //
 //  Created by Aleksander Balicki on 12/12/13.
@@ -8,12 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-@interface WWDetailViewController : UIViewController <UIWebViewDelegate>
+//static NSString *const serverUrl = @"http://10.10.10.111:8080";
+static NSString *const serverUrl = @"http://127.0.0.1:8080";
+
+@interface WWGameViewController : UIViewController <UIWebViewDelegate>
 
 @property(nonatomic, strong) NSDictionary *start, *end;
 @property(nonatomic, strong) UIWebView *webview;
 
 @property(nonatomic, strong) NSDate *startDate;
+@property(nonatomic) NSUInteger clicks;
 
 - (void)startGame;
 @end

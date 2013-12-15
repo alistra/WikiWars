@@ -1,5 +1,5 @@
 //
-//  WWMasterViewController.h
+//  WWHomeViewController.h
 //  WikiaWars
 //
 //  Created by Aleksander Balicki on 12/12/13.
@@ -8,9 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@class WWDetailViewController;
+@class WWGameViewController;
 
-@interface WWMasterViewController : UITableViewController
+@interface WWHomeViewController : UITableViewController
 
 @property(nonatomic, strong) UIButton *startButton;
+@property(nonatomic, strong) UIImageView *logoView;
 @end

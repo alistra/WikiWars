@@ -7,7 +7,7 @@
 //
 
 #import "WWAppDelegate.h"
-#import "WWMasterViewController.h"
+#import "WWHomeViewController.h"
 
 @implementation WWAppDelegate
 
@@ -16,7 +16,7 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 
 
-    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:[[WWMasterViewController alloc] init]];
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:[[WWHomeViewController alloc] init]];
     self.window.rootViewController = navigationController;
     [self.window makeKeyAndVisible];
     return YES;
