@@ -220,7 +220,7 @@
 				ORGANIZATIONNAME = Wikia;
 				TargetAttributes = {
 					C9858CD29050C838035230FC = {
-						DevelopmentTeam = LW86FQS96L;
+						DevelopmentTeam = TZG96M856D;
 					};
 				};
 			};
@@ -385,10 +385,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WikiaWars/WikiaWars-Prefix.pch";
 				INFOPLIST_FILE = "WikiaWars/WikiaWars-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "436BFC98-369F-4BAE-9E3E-53FFF2D0C12E";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -437,11 +439,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Wikia, Inc.";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WikiaWars/WikiaWars-Prefix.pch";
 				INFOPLIST_FILE = "WikiaWars/WikiaWars-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "436BFC98-369F-4BAE-9E3E-53FFF2D0C12E";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
